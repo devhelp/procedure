@@ -10,6 +10,13 @@ class ArgumentResolver
 {
     protected $argumentsPool = array();
 
+    /**
+     * returns true value of the argument. If argument is an array then it searches through
+     * all the values if they need to be resolved
+     *
+     * @param mixed $argument
+     * @return mixed
+     */
     public function resolve($argument)
     {
         if ($argument instanceof Reference) {
@@ -23,6 +30,13 @@ class ArgumentResolver
         return $value;
     }
 
+    /**
+     * resolves array of arguments
+     *
+     * @see resolve
+     * @param array $arguments
+     * @return array
+     */
     public function resolveAll(array $arguments)
     {
         $resolved = array();
@@ -34,9 +48,15 @@ class ArgumentResolver
         return $resolved;
     }
 
-    public function add($reference, $argument)
+    /**
+     * adds real value of reference to arguments pool
+     *
+     * @param $reference
+     * @param $value
+     */
+    public function add($reference, $value)
     {
-        return $this->argumentsPool[$reference] = $argument;
+        $this->argumentsPool[$reference] = $value;
     }
 
     private function resolveReference($reference)

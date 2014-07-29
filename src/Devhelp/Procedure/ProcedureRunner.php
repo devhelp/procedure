@@ -31,6 +31,12 @@ class ProcedureRunner
         return $this;
     }
 
+    /**
+     * interprets all steps in the procedure returning result of interpretation of the last step
+     *
+     * @param Procedure $procedure
+     * @return mixed
+     */
     public function follow(Procedure $procedure)
     {
         $lastResult = null;
