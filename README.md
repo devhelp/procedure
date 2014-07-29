@@ -73,7 +73,9 @@ $runner->setInterpreter($interpreter);
 echo $runner->follow($procedure), PHP_EOL; //returns result of last step ('1000')
 ```
 
-## How can I change interpretation
+## FAQ
+
+### How can I change interpretation
 
 You can write own interpreter class and set it in ProcedureRunner.
 It has to implement Devhelp\Procedure\Interpreter\InterpreterInterface.
