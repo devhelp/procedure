@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/devhelp/procedure.png)](https://travis-ci.org/devhelp/procedure)  [![SensioLabsInsight](https://insight.sensiolabs.com/projects/cf024010-1a11-47c8-988a-bb0b8e2aac56/mini.png)](https://insight.sensiolabs.com/projects/cf024010-1a11-47c8-988a-bb0b8e2aac56)
+[![Build Status](https://travis-ci.org/devhelp/procedure.png)](https://travis-ci.org/devhelp/procedure)  [![SensioLabsInsight](https://insight.sensiolabs.com/projects/f201687c-8951-4ea9-9fce-aed0a4d2046a/mini.png)](https://insight.sensiolabs.com/projects/f201687c-8951-4ea9-9fce-aed0a4d2046a)
 
 ## Installation
 
