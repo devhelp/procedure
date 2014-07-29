@@ -27,7 +27,7 @@ class CallableInterpreterSpec extends ObjectBehavior
     {
         $corePhpFunction = array('strlen', '0123456789');
         $anonymousFunction = array(function($a, $b) { return $a + $b;}, 1, 2);
-        $classMethod = array(array(new \DateTime('2000-01-01'), 'getTimestamp'));
+        $classMethod = array(array(new \DateTime('2000-01-01', new \DateTimeZone('Europe/Warsaw')), 'getTimestamp'));
 
         $this->interpret($step, $corePhpFunction)->shouldReturn(10);
         $this->interpret($step, $anonymousFunction)->shouldReturn(3);
