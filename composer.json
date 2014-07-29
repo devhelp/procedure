@@ -23,7 +23,6 @@
     },
     "require-dev": {
         "phpspec/phpspec": "~2",
-        "henrikbjorn/phpspec-code-coverage": "1.*@dev",
         "squizlabs/php_codesniffer": "~1"
     },
     "config": {
