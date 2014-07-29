@@ -1,0 +1,34 @@
+{
+    "name": "devhelp/procedure",
+    "description": "introduces mechanism that allows you to define steps with its arguments that are going to be interpreted in order they are defined in the procedure",
+    "homepage": "http://devhelp.pl",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paweł Barański",
+            "email": "pawel.baranski1@gmail.com"
+        },
+        {
+            "name": "devhelp.pl",
+            "email": "devhelp@devhelp.pl"
+        }
+    ],
+    "autoload": {
+        "psr-0": { 
+            "Devhelp\\Procedure": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2",
+        "henrikbjorn/phpspec-code-coverage": "1.*@dev",
+        "squizlabs/php_codesniffer": "~1"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
