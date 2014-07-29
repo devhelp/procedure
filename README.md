@@ -44,7 +44,8 @@ class Math
 }
 
 /**
- * because we are using CallableInterpreter in the example then first argument of step arguments is a callback
+ * because we are using CallableInterpreter in the example, first argument
+ * of step arguments is a callback
  */
 
 $stepOne = new Step('add_1', array('Math::add', 1, 1));
